@@ -38,8 +38,8 @@ function SimpleShader(vertexShaderPath, fragmentShaderPath) {
     if (!gl.getProgramParameter(this.mCompiledShader, gl.LINK_STATUS)) {
         alert("Error linking shader");
         return null;
+        
     }
-
     // Step D: Gets a reference to the aSquareVertexPosition attribute within the shaders.
     this.mShaderVertexPositionAttribute = gl.getAttribLocation(
         this.mCompiledShader, "aSquareVertexPosition");
